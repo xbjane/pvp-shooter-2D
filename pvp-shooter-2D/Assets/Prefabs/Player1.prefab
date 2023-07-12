@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 678694035405743496}
   - component: {fileID: 6268590280813131553}
   - component: {fileID: 9013549048874549890}
+  - component: {fileID: 2325904493760973001}
+  - component: {fileID: -5758720043626967399}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -122,9 +124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321857181464baa418078ede121ec64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   isDead: 0
-  joystick: {fileID: 0}
-  shootButton: {fileID: 0}
+  rb: {fileID: 0}
   speed: 5
 --- !u!114 &678694035405743496
 MonoBehaviour:
@@ -199,3 +203,44 @@ MonoBehaviour:
   syncAngularVelocity: 1
   clearAngularVelocity: 0
   angularVelocitySensitivity: 0.1
+--- !u!61 &2325904493760973001
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4188717167950913009}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.16746669}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.343}
+    oldSize: {x: 1, y: 1.0666667}
+    newSize: {x: 1, y: 1.0666667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0666667}
+  m_EdgeRadius: 0
+--- !u!114 &-5758720043626967399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4188717167950913009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d17e718851449a6879986e45c458fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
